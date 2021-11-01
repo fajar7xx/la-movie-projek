@@ -11,8 +11,8 @@
 <body class="font-sans bg-gray-900 text-white">
 {{--    navigation--}}
 <nav class="border-b border-gray-800">
-    <div class="container mx-auto flex items-center justify-between px-4 py-6">
-        <ul class="flex items-center">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-6">
+        <ul class="flex flex-col md:flex-row items-center">
             <li>
                 <a href="">
                     <svg class="w-32" viewBox="0 0 96 24" fill="none">
@@ -20,19 +20,24 @@
                     </svg>
                 </a>
             </li>
-            <li class="ml-16"><a href="#" class="hover:text-gray-300">Movies</a></li>
-            <li class="ml-6"><a href="#" class="hover:text-gray-300">Tv Shows</a></li>
-            <li class="ml-6"><a href="#" class="hover:text-gray-300">Actors</a></li>
+            <li class="md:ml-16 mt-3 md:mt-0"><a href="#" class="hover:text-gray-300">Movies</a></li>
+            <li class="md:ml-6 mt-3 md:mt-0"><a href="#" class="hover:text-gray-300">Tv Shows</a></li>
+            <li class="md:ml-6 mt-3 md:mt-0"><a href="#" class="hover:text-gray-300">Actors</a></li>
         </ul>
 
-        <div class="flex items-center">
-            <div class="relative">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="relative mt-3 md:mt-0">
                 <input type="text" class="bg-gray-800 rounded-full w-64 px-4 py-1 pl-8 focus:outline-none focus:shadow-outline text-sm" placeholder="Search">
                 <div class="absolute top-6">
 {{--                    svg search here--}}
 {{--                    https://youtu.be/9OKbmMqsREc?list=PLEhEHUEU3x5pYTjZze3fhYMB4Nl_WOHI4&t=1020--}}
 {{--                    <svg class="fill-current text-gray-500 w-4 mb-8 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487.95 487.95" style="enable-background:new 0 0 487.95 487.95" xml:space="preserve"><path d="m481.8 453-140-140.1c27.6-33.1 44.2-75.4 44.2-121.6C386 85.9 299.5.2 193.1.2S0 86 0 191.4s86.5 191.1 192.9 191.1c45.2 0 86.8-15.5 119.8-41.4l140.5 140.5c8.2 8.2 20.4 8.2 28.6 0 8.2-8.2 8.2-20.4 0-28.6zM41 191.4c0-82.8 68.2-150.1 151.9-150.1s151.9 67.3 151.9 150.1-68.2 150.1-151.9 150.1S41 274.1 41 191.4z"/></svg>--}}
                 </div>
+            </div>
+            <div class="md:ml-4 mt-3 md:mt-0">
+                <a href="">
+                    <img src="{{asset('img/avatar.jpg')}}" alt="" class="rounded-full w-8 h-8">
+                </a>
             </div>
         </div>
     </div>
